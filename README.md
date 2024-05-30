@@ -1,0 +1,2 @@
+# ansible_example_formal
+ansible部署openstack
