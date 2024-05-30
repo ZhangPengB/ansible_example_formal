@@ -17,4 +17,4 @@ COMPUTER_IP: "{{ ansible_default_ipv4.address }}"   # 当前计算节点的IP，
 # NOVA_PASS: 123456
 # RABBIT_PASS: 123456
 PLACEMENT_PASS: 123456
-my_ip: 192.168.10.110   # 当前节点的IP，多节点部署需采用动态变量方式
+my_ip: "{{ ansible_default_ipv4.address }}"   # 当前节点的IP，多节点部署需采用动态变量方式
